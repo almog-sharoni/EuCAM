@@ -1,0 +1,10 @@
++---------------+       +---------------+       +---------------+
+|   CAMMemory   |       |  QueryMasker  |       |  CAMSearcher  |
++---------------+       +---------------+       +---------------+
+| - patterns    |       | - mask_bits   |       | - cam_memory  |
+| + add_pattern()|       + generate()   |       | - masker      |
+| + get_patterns() |     |               |       + search()     |
++---------------+       +---------------+       +---------------+
+        ^                         ^
+        |                         |
+   Uses patterns           Uses masker to generate masked queries
